@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato com o Instituto Arkham do Saber - formulário, endereço e telefone">
+    <meta name="author" content="Equipe IAS">
+    <title>Contato - Instituto Arkham do Saber</title>
+</head>
+<body>
+
+    <!-- ==================== CABEÇALHO ==================== -->
+    <header>
+        <figure>
+            <img src="images/logo.png" alt="Logotipo do Instituto Arkham do Saber" width="120" height="80">
+            <figcaption>Instituto Arkham do Saber</figcaption>
+        </figure>
+
+        <nav aria-label="Menu principal">
+            <ul>
+                <li><a href="index.html" title="Página inicial">Início</a></li>
+                <li><a href="sobre.html" title="Sobre o IAS">Sobre Nós</a></li>
+                <li><a href="cursos.html" title="Cursos e programas">Cursos</a></li>
+                <li><a href="contato.html" title="Fale conosco">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ==================== CONTEÚDO PRINCIPAL ==================== -->
+    <main>
+
+        <section id="introducao">
+            <h1>Fale Conosco</h1>
+            <p>
+                Tem dúvidas sobre nossos cursos, processos seletivos ou parcerias? 
+                Preencha o formulário abaixo ou entre em contato pelos nossos canais de atendimento.
+            </p>
+        </section>
+
+        <!-- ==================== FORMULÁRIO DE CONTATO ==================== -->
+        <section id="formulario">
+            <h2>Formulário de Contato</h2>
+
+            <form action="#" method="post">
+
+                <!-- Campo: Nome completo -->
+                <p>
+                    <label for="nome">Nome completo: *</label><br>
+                    <input 
+                        type="text" 
+                        id="nome" 
+                        name="nome" 
+                        placeholder="Informe seu nome completo" 
+                        required 
+                        minlength="5" 
+                        maxlength="100"
+                        title="O nome deve ter entre 5 e 100 caracteres">
+                </p>
+
+                <!-- Campo: E-mail -->
+                <p>
+                    <label for="email">E-mail: *</label><br>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="exemplo@dominio.com" 
+                        required
+                        title="Informe um e-mail válido, como exemplo@dominio.com">
+                </p>
+
+                <!-- Campo: Telefone -->
+                <p>
+                    <label for="telefone">Telefone (opcional):</label><br>
+                    <input 
+                        type="tel" 
+                        id="telefone" 
+                        name="telefone" 
+                        placeholder="(21) 99999-9999"
+                        pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}"
+                        title="Formato esperado: (21) 99999-9999">
+                </p>
+
+                <!-- Campo: Assunto (select) -->
+                <p>
+                    <label for="assunto">Assunto: *</label><br>
+                    <select id="assunto" name="assunto" required title="Selecione um assunto">
+                        <option value="">-- Selecione uma opção --</option>
+                        <option value="cursos">Informações sobre cursos</option>
+                        <option value="inscricao">Processo seletivo / Inscrição</option>
+                        <option value="parceria">Proposta de parceria</option>
+                        <option value="acessibilidade">Acessibilidade e inclusão</option>
+                        <option value="outros">Outros assuntos</option>
+                    </select>
+                </p>
+
+                <!-- Campo: Mensagem (textarea) -->
+                <p>
+                    <label for="mensagem">Mensagem: *</label><br>
+                    <textarea 
+                        id="mensagem" 
+                        name="mensagem" 
+                        rows="6" 
+                        cols="50" 
+                        placeholder="Escreva sua mensagem com pelo menos 20 caracteres" 
+                        required 
+                        minlength="20" 
+                        maxlength="1000"
+                        title="A mensagem deve ter no mínimo 20 caracteres"></textarea>
+                </p>
+
+                <!-- Campo: Checkbox de privacidade -->
+                <p>
+                    <input 
+                        type="checkbox" 
+                        id="privacidade" 
+                        name="privacidade" 
+                        required>
+                    <label for="privacidade">Li e aceito a política de privacidade do IAS. *</label>
+                </p>
+
+                <!-- Botões -->
+                <p>
+                    <button type="submit" title="Enviar o formulário">Enviar mensagem</button>
+                    <button type="reset" title="Limpar todos os campos">Limpar formulário</button>
+                </p>
+
+                <p><small>* Campos obrigatórios</small></p>
+
+            </form>
+        </section>
+
+        <!-- ==================== INFORMAÇÕES DE CONTATO ==================== -->
+        <section id="informacoes">
+            <h2>Informações de Contato</h2>
+
+            <article>
+                <h3>Endereço</h3>
+                <address>
+                    <strong>Instituto Arkham do Saber (IAS)</strong><br>
+                    Ilha Arkham, Setor 7<br>
+                    Gotham City, NJ, 07001<br>
+                    Brasil
+                </address>
+            </article>
+
+            <article>
+                <h3>Telefone e E-mail</h3>
+                <ul>
+                    <li><strong>Telefone:</strong> <a href="tel:+120155501995" title="Ligar para o IAS">(201) 555-01995</a></li>
+                    <li><strong>E-mail:</strong> <a href="mailto:contato@ihs.gotham.edu" title="Enviar e-mail para o IAS">contato@ihs.gotham.edu</a></li>
+                    <li><strong>Secretaria Acadêmica:</strong> <a href="mailto:secretaria@ihs.gotham.edu" title="E-mail da secretaria">secretaria@ihs.gotham.edu</a></li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Horário de Atendimento</h3>
+                <ul>
+                    <li><strong>Segunda a sexta:</strong> 8h às 20h</li>
+                    <li><strong>Sábado:</strong> 8h às 12h</li>
+                    <li><strong>Domingo e feriados:</strong> Fechado</li>
+                </ul>
+            </article>
+
+            <aside>
+                <h3>Acessibilidade</h3>
+                <p>
+                    Nosso campus possui rampas, elevadores, banheiros adaptados e 
+                    <strong>intérprete de Libras</strong> para atendimento presencial. 
+                    Para atendimento remoto acessível, envie e-mail para 
+                    <a href="mailto:acessibilidade@ihs.gotham.edu" title="E-mail de acessibilidade">acessibilidade@ihs.gotham.edu</a>.
+                </p>
+            </aside>
+        </section>
+
+        <!-- ==================== MAPA ==================== -->
+        <section id="mapa">
+            <h2>Como Chegar</h2>
+            <p>
+                O IAS está localizado na Ilha Arkham, Setor 7. O acesso pode ser feito por 
+                transporte público (linhas 7, 12 e 45) ou por balsa a partir do centro de Gotham.
+            </p>
+
+            <figure>
+                <iframe 
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=-74.05%2C40.70%2C-73.95%2C40.75&amp;layer=mapnik" 
+                    width="600" 
+                    height="400" 
+                    title="Mapa da localização do Instituto Arkham do Saber em Gotham City"
+                    loading="lazy">
+                </iframe>
+                <figcaption>Mapa da Ilha Arkham, Setor 7 — Gotham City</figcaption>
+            </figure>
+
+            <p>
+                <a href="https://www.openstreetmap.org/" target="_blank" rel="noopener" title="Abrir mapa no OpenStreetMap">
+                    Abrir mapa completo em nova aba
+                </a>
+            </p>
+        </section>
+
+    </main>
+
+    <!-- ==================== RODAPÉ ==================== -->
+    <footer>
+        <address>
+            <strong>Instituto Arkham do Saber (IAS)</strong><br>
+            Ilha Arkham, Setor 7 — Gotham City, NJ, 07001<br>
+            Telefone: <a href="tel:+120155501995">(201) 555-01995</a><br>
+            E-mail: <a href="mailto:contato@ihs.gotham.edu">contato@ihs.gotham.edu</a>
+        </address>
+        <p>&copy; 2026 Instituto Arkham do Saber. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
